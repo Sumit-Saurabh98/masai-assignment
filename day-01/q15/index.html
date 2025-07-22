@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(to bottom, #000851, #00d2ff);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      color: white;
+    }
+
+    h2 {
+      color: black;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #1a1a8e;
+      color: white;
+    }
+
+    form label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    form textarea {
+      height: 80px;
+    }
+
+    form button {
+      margin-top: 15px;
+      padding: 8px 16px;
+      background-color: #1a1a8e;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #000851;
+    }
+
+
+    footer {
+      height: 50px;
+      background: linear-gradient(to bottom, #000851, #00d2ff);
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Welcome to My Portfolio</h2>
+      <p>This portfolio showcases my projects and provides information about my background and contact details.</p>
+    </section>
+
+    <section>
+      <h2>About</h2>
+      <p>Hello! I'm a web developer passionate about building dynamic and responsive websites. I enjoy creating user-friendly interfaces and working on challenging projects.</p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Project Name</th>
+            <th>Description</th>
+            <th>Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Project Alpha</td>
+            <td>A web-based tool for tracking project progress and managing tasks.</td>
+            <td>2023</td>
+          </tr>
+          <tr>
+            <td>Portfolio Site</td>
+            <td>A personal website showcasing my work and skills as a web developer.</td>
+            <td>2024</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" />
+
+        <label for="message">Message:</label>
+        <textarea id="message"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer></footer>
+
+</body>
+</html>

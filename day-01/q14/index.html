@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="/submit">
+        <label for="username">Enter Username:</label>
+        <input type="text" id="username" name="username">
+      
+        <label for="passcode">Password:</label>
+        <input type="password" id="passcode" name="password">
+      
+        <button type="submit">Submit Form</button>
+      </form>
+
+      <!-- 
+
+
+ 🛠️ What Was Fixed and Why
+<label Name="username"> → <label for="username">
+
+Name is not a valid attribute for <label>.
+
+for="username" tells the label which input it’s linked to by referencing the input’s id. This improves usability — clicking the label focuses the input.
+
+<input type="text" id="username" name="username>
+
+The name="username" attribute wasn’t closed properly — it was missing the closing quote (").
+
+Fixed to name="username" so the browser can correctly parse the form field.
+
+<input typ="password" → type="password"
+
+Just a small typo in type. Browsers don’t recognize typ as valid.
+
+Changed it to the correct spelling so it renders as a password input.
+
+<button Submit> → <button type="submit">
+
+Submit isn't a valid attribute.
+
+We use type="submit" to make it submit the form when clicked.
+
+</buttn> → </button>
+
+Just a classic typo — we’ve all done it.
+
+Correct closing tag is </button>.
+
+       -->
+      
+</body>
+</html>

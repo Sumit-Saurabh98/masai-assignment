@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Image Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    section {
+      background-color: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      width: 250px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Mini Image Gallery</h1>
+
+  <div class="gallery">
+    <section>
+      <img src="https://picsum.photos/id/1011/400/300" alt="A scenic mountain view with a lake">
+      <a href="https://en.wikipedia.org/wiki/Mountain" target="_blank">Learn more about mountains</a>
+    </section>
+
+    <section>
+      <img src="https://picsum.photos/id/1025/400/300" alt="A close-up of a cute dog">
+      <a href="https://en.wikipedia.org/wiki/Dog" target="_blank">More about dogs</a>
+    </section>
+
+    <section>
+      <img src="https://picsum.photos/id/1041/400/300" alt="A quiet forest trail in autumn">
+      <a href="https://en.wikipedia.org/wiki/Forest" target="_blank">Discover forests</a>
+    </section>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh
+        }
+
+        .form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input{
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid gray;
+            width: 300px;
+        }
+
+        textarea{
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid gray;
+            width: 300px;
+        }
+
+        select{
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid gray;
+            width: 300px;
+        }
+
+        button{
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid gray;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" class="form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Dev Joshi">
+           
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="dev@example.com">
+
+            <label for="gender">Full Name:</label>
+            <select id="gender" name="gender" required>
+                <option value="">--Please choose--</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">Others</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+             <button type="submit">Submit</button>
+
+            </textarea>
+        </form>
+    </div>
+</body>
+</html>
